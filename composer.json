@@ -1,7 +1,6 @@
 {
     "require": {
         "php":"~8.2",
-        "symfony/console": "^6.2",
         "guzzlehttp/guzzle": "^7.7"
     },
     "autoload": {

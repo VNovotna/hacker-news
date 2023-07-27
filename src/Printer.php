@@ -19,7 +19,7 @@ class Printer
         foreach ($stories as $item) {
             print $item->title . " from " . $item->created->format(DATE_ATOM) . PHP_EOL .
                 $this->storyUrl . $item->id . PHP_EOL .
-                $item->url . PHP_EOL;
+                (is_string($item->url) ? $item->url : "") . PHP_EOL;
             print "---" . PHP_EOL;
         }
     }
